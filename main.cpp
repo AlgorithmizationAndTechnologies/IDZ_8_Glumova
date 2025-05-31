@@ -38,11 +38,8 @@ int main() {
 		std::cout << "8. Leave\n";
 		std::cout << "Choice action: ";
 		cin >> choice;
-		if (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7) {
-			std::cout << "Incorrect number of action";
-			break;
-		}
-		else if (choice == 1)
+		
+		if (choice == 1)
 			std::cout << endl << _sum(sv1, sv2).FormateVector() << endl;
 		else if (choice == 2)
 			std::cout << endl << _razn(sv1, sv2).FormateVector();
